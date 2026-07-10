@@ -1,0 +1,12 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  probar-nginx:
+    runs-on: ubuntu-latest
+    container:
+      image: nginx:alpine
+
+    steps:
+      - name: Ejecutar comando dentro del contenedor
+        run: nginx -v
