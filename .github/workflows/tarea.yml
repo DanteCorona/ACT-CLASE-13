@@ -1,6 +1,4 @@
-on:
-  workflow_dispatch:
-
+on: push
 jobs:
   probar-nginx:
     runs-on: ubuntu-latest
